@@ -122,8 +122,6 @@ metodi sono stati originariamente sviluppati (recensioni, social media).
 ## Limiti del metodo
 
 È importante essere espliciti sui limiti di questo approccio, per due motivi:
-mostra consapevolezza critica (richiesta esplicitamente dalla consegna del
-progetto) e anticipa possibili domande in sede d'esame.
 
 - **Dizionario limitato**: l'elenco di parole positive/negative usato
   (circa 150 parole totali) è una scelta manuale e non esaustiva. Molte
@@ -226,12 +224,6 @@ secondo momento chiave della trama — la crisi dell'Innominato e di Lucia al
 capitolo XXI — e lo fa in modo tanto più credibile quanto più ampio è il
 campione di testo disponibile, un aspetto verificato esplicitamente e non
 solo assunto.
-
-Il metodo, proprio per la sua semplicità e trasparenza, si presta bene a
-un'analisi didattica come questa, dove l'obiettivo non è la massima
-accuratezza possibile ma la comprensione critica di cosa un metodo
-computazionale può e non può cogliere di un testo letterario — e di quanto
-ci si possa fidare di ciascun singolo risultato che produce.
 
 In sintesi, la risposta alla domanda di ricerca è positiva, con le cautele
 discusse nella sezione dei limiti: l'andamento del tono emotivo nei capitoli
