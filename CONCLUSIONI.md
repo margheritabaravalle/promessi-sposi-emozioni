@@ -53,12 +53,18 @@ narrativa ottocentesca (parole come "paura", "morte", "speranza", "pace",
 "peste", "gioia"). Il testo di ogni capitolo è stato suddiviso in parole
 (tokenizzazione), e per ciascuna parola è stato verificato se comparisse
 nell'uno o nell'altro elenco. Il punteggio finale è dato dalla differenza tra
-parole positive e negative trovate, **normalizzata ogni 1000 parole** per
-rendere confrontabili capitoli di lunghezza molto diversa (il capitolo più
-lungo e quello più corto del romanzo differiscono di oltre il triplo in numero
-di parole: senza normalizzazione, i capitoli più lunghi risulterebbero
-artificialmente più "carichi" emotivamente solo perché contengono più parole in
-assoluto).
+parole positive e negative trovate, **divisa per il numero totale di parole del
+capitolo** (formula: *(positive - negative) ÷ parole totali del capitolo*). Il
+risultato è poi moltiplicato per 1000, solo per comodità di lettura: un valore
+come -0,00928 diventa -9,28, più facile da leggere e da rappresentare in un
+grafico, senza alterare i confronti tra capitoli (tutti i punteggi sono
+moltiplicati per lo stesso numero). La divisione per il totale delle parole è il
+passaggio che rende confrontabili capitoli di lunghezza molto diversa (il
+capitolo più lungo e quello più corto del romanzo differiscono di oltre il
+triplo in numero di parole: senza questa divisione, i capitoli più lunghi
+risulterebbero artificialmente più "carichi" emotivamente solo perché
+contengono più parole in assoluto). Il punteggio è quindi una misura
+proporzionale, simile a una media, e non un conteggio assoluto di parole.
 
 ### 5. Visualizzazione
 I punteggi dei 38 capitoli sono stati rappresentati in un grafico a barre
@@ -156,7 +162,9 @@ isolate, per ciascun personaggio, solo le frasi in cui compare il suo nome o
 una variante (Renzo: "Renzo", "Tramaglino"; Lucia: "Lucia", "Mondella";
 Innominato: "Innominato"). Sul testo così isolato è stato calcolato lo stesso
 punteggio di sentiment usato nella Fase 2 (stesso dizionario di parole
-positive/negative, stessa normalizzazione ogni 1000 parole), per restare
+positive/negative, stessa formula: differenza tra positive e negative divisa per
+il totale delle parole di quel testo e moltiplicata per 1000 per comodità di
+lettura), per restare
 pienamente confrontabile con l'analisi generale del romanzo. I capitoli in cui
 un personaggio non compare affatto sono stati esclusi dal grafico per quel
 personaggio (l'Innominato, per esempio, entra in scena solo a metà libro).
